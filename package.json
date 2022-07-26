@@ -1,0 +1,19 @@
+{
+  "name": "@amzn/nftpaperdoll-hack",
+  "version": "0.1.0",
+  "description": "",
+  "author": "",
+  "license": "UNLICENSED",
+  "repository": "ssh://git.amazon.com/pkg/NFTPaperdollHack",
+  "homepage": "https://code.amazon.com/packages/NFTPaperdollHack",
+  "scripts": {
+    "test": "echo 'running tests'",
+    "build": "echo 'building the packages'",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "files": [],
+  "npm-pretty-much": {
+    "runTest": "never",
+    "ciBuild": "always"
+  }
+}
