@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import Header from 'components/Header';
 
-import { GetGreeter, SetGreeter } from '../components/contract';
-
 export default function Home() {
   return (
       <div className={''}>
@@ -24,10 +22,7 @@ export default function Home() {
                   justifyContent: 'center',
                   alignItems: 'center',
               }}
-          >
-              <GetGreeter />
-              <SetGreeter />
-          </main>
+          ></main>
       </div>
   );
 }
