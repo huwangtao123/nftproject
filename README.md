@@ -8,5 +8,5 @@ Get Started:
 1. `brazil ws create --name NFTPaperdollHack`
 2. `cd NFTPaperdollHack`
 3. `brazil ws use -p NFTPaperdollHack -vs NFTPaperdollHack/mainline`
-4. install the packages `yarn install` or `npm run install` 
-5. start your front end `yarn dev` or `npm run dev`
+4. install the packages `yarn install` 
+5. start your front end `yarn dev`

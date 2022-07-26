@@ -22,7 +22,8 @@ export default function Home() {
                   justifyContent: 'center',
                   alignItems: 'center',
               }}
-          ></main>
+          >
+          </main>
       </div>
   );
 }

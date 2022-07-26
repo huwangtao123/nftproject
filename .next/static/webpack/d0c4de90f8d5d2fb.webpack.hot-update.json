@@ -1,1 +1,0 @@
-{"c":["pages/index","webpack"],"r":[],"m":["./components/contract/GetGreeter.tsx","./components/contract/SetGreeter.tsx","./components/contract/index.ts","./config.ts","./contracts/hardhat_contracts.json"]}

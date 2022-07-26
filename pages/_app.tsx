@@ -19,7 +19,6 @@ import { useIsMounted } from '../hooks';
 
 // Get environment variables
 const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID as string;
-// const infuraId = process.env.NEXT_PUBLIC_INFURA_ID as string;
 
 const { chains, provider } = configureChains(
   [chain.rinkeby, chain.mainnet],
