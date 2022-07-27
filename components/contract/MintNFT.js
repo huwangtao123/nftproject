@@ -18,7 +18,7 @@ export function MintNFT() {
     addressOrName: paperAddress,
     contractInterface: paperABI,
     functionName: 'safeMint',
-    args: [address, 'test1'],
+    args: [address, 'https://d2xmu33khflglz.cloudfront.net/uri.json'],
   });
   const { data, error, isError, write } = useContractWrite(config);
 
