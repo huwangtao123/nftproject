@@ -9,7 +9,7 @@ const style = {
     logoContainer: `flex items-center cursor-pointer`,
     logoText: ` ml-[0.8rem] text-white font-semibold text-2xl`,
     extraSpace: `flex flex-1 mx-[0.8rem] w-max-[520px]`,
-    headerItems: ` flex flex-wrap items-center justify-end`,
+    headerItems: `flex flex-wrap items-center justify-end`,
     headerItem: `text-white px-6 font-bold text-[#c8cacd] hover:text-white cursor-pointer`,
     headerIcon: `text-[#8a939b] text-3xl font-black px-4 hover:text-white cursor-pointer`,
 };
@@ -19,7 +19,7 @@ const Header = () => {
         <div className={style.wrapper}>
             <Link href='/'>
                 <div className={style.logoContainer}>
-                    <Image src={amazonLogo} height={40} width={40} />
+                    <Image src={amazonLogo} height={40} width={80} />
                     <div className={style.logoText}>Amazon Fashion</div>
                 </div>
             </Link>
@@ -27,7 +27,7 @@ const Header = () => {
             <div className={style.extraSpace}></div>
             <div className={style.headerItems}>
                 <Link href='/'>
-                    <div className={style.headerItem}> VTO Mint </div>
+                    <div className={style.headerItem}> PaperDoll Mint </div>
                 </Link>
                 <Link href='/collections/0x66a576A977b7Bccf510630E0aA5e450EC11361Fa'>
                     <div className={style.headerItem}> Collections </div>
