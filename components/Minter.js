@@ -7,9 +7,9 @@ const style = {
   wrapper: `px-20 place-content-center`,
   form: `flex flex-col space-y-16 px-8 pt-6 pb-8 mb-6 justify-evenly`,
   title: `text-center text-2xl w-full`,
-  menu: `pt-6`,
+  menu: `pt-1`,
   button: `bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`,
-  image: `pt-6`,
+  image: `pt-1 mx-auto`,
 };
 
 const Minter = () => {
@@ -27,8 +27,11 @@ const Minter = () => {
           Try on
         </button>
         <div className={style.image}>
-          <Image alt='test image' src={testimage} />
+          <Image alt='test image' src={testimage} width={200} height={400} />
         </div>
+        <button type='button' className={style.button}>
+          Mint to NFT
+        </button>
       </div>
     </div>
   );
