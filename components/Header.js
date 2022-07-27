@@ -16,26 +16,26 @@ const style = {
 
 const Header = () => {
     return (
-        <div className={style.wrapper}>
-            <Link href='/'>
-                <div className={style.logoContainer}>
-                    <Image src={amazonLogo} height={40} width={80} />
-                    <div className={style.logoText}>Amazon Fashion</div>
-                </div>
-            </Link>
+      <div className={style.wrapper}>
+        <Link href='/'>
+          <div className={style.logoContainer}>
+            <Image src={amazonLogo} height={40} width={80} />
+            <div className={style.logoText}>Amazon Fashion</div>
+          </div>
+        </Link>
 
-            <div className={style.extraSpace}></div>
-            <div className={style.headerItems}>
-                <Link href='/'>
-                    <div className={style.headerItem}> PaperDoll Mint </div>
-                </Link>
-                <Link href='/collections/0x66a576A977b7Bccf510630E0aA5e450EC11361Fa'>
-                    <div className={style.headerItem}> Collections </div>
-                </Link>
-            </div>
-
-            <ConnectButton />
+        <div className={style.extraSpace}></div>
+        <div className={style.headerItems}>
+          <Link href='/'>
+            <div className={style.headerItem}> PaperDoll Mint </div>
+          </Link>
+          <Link href='/collectionPage'>
+            <div className={style.headerItem}> Collection </div>
+          </Link>
         </div>
+
+        <ConnectButton />
+      </div>
     );
 };
 
