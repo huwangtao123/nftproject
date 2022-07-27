@@ -1,5 +1,6 @@
 import React from 'react';
 import SelectMenu from './SelectMenu';
+import SelectAsinMenu from './SelectAsinMenu';
 import Image from 'next/image';
 import testimage from '../public/test.png';
 
@@ -21,7 +22,7 @@ const Minter = () => {
           <SelectMenu />
         </div>
         <div className={style.menu}>
-          <SelectMenu className={style.menu} />
+          <SelectAsinMenu />
         </div>
         <button type='button' className={style.button}>
           Try on
