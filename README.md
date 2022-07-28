@@ -10,3 +10,7 @@ Get Started:
 3. `brazil ws use -p NFTPaperdollHack -vs NFTPaperdollHack/mainline`
 4. install the packages `yarn install` 
 5. start your front end `yarn dev`
+
+Alchemy NFT API:
+1. `yarn install`
+2. `node utils/alchemy-sdk-script.js`
