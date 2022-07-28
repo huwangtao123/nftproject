@@ -5,15 +5,14 @@ import Image from 'next/image';
 import emptyPerson from '../public/Empty Person.png';
 import emptyAsin from '../public/Empty ASIN.png';
 import emptyResult from '../public/Empty Result.png';
-import testimage from '../public/test.png';
 import { MintNFT } from 'components/contract/MintNFT';
 
 const style = {
   wrapper: `px-20 place-content-center`,
-  form: `flex flex-col space-y-16 px-8 pt-6 pb-8 mb-6 justify-evenly`,
+  form: `flex flex-col space-y-16 px-10 pt-6 pb-8 mb-6 justify-evenly`,
   title: `text-center text-2xl w-full`,
   menu: `pt-1`,
-  button: `text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`,
+  button: `mx-auto text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`,
   image: `pt-1 mx-auto`,
   collections: `flex flex-row justify-evenly`,
 };
@@ -29,9 +28,11 @@ const Minter = () => {
         <div className={style.menu}>
           <SelectAsinMenu />
         </div>
-        <button type='button' className={style.button}>
-          Try on
-        </button>
+        <div>
+          <button type='button' className={style.button}>
+            Try on
+          </button>
+        </div>
         <div className={style.collections}>
           <div className={style.image}>
             <Image
@@ -53,9 +54,7 @@ const Minter = () => {
             />
           </div>
         </div>
-        <div className={style.button}>
-          <MintNFT />
-        </div>
+        <MintNFT />
       </div>
     </div>
   );

@@ -9,6 +9,9 @@ import {
 import contracts from '@/contracts/hardhat_contracts.json';
 const paperAddress = contracts.Paper.address;
 const paperABI = contracts.Paper.abi;
+const style = {
+  button: `mx-auto text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded `,
+};
 
 export function MintNFT() {
   const { address } = useAccount();
@@ -18,7 +21,7 @@ export function MintNFT() {
     addressOrName: paperAddress,
     contractInterface: paperABI,
     functionName: 'safeMint',
-    args: [address, 'https://d2xmu33khflglz.cloudfront.net/uri.json'],
+    args: [address, 'https://d2xmu33khflglz.cloudfront.net/uri1.json'],
   });
   const { data, error, isError, write } = useContractWrite(config);
 
@@ -28,8 +31,12 @@ export function MintNFT() {
 
   return (
     <div>
-      <button disabled={!write} onClick={() => write?.()}>
-        {isLoading ? 'Minting...' : 'Mint'}
+      <button
+        className={style.button}
+        disabled={!write}
+        onClick={() => write?.()}
+      >
+        {isLoading ? 'Minting...' : 'Mint NFT'}
       </button>
       {isSuccess && (
         <div>
