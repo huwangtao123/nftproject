@@ -40,6 +40,5 @@
   "npm-pretty-much": {
     "runTest": "never",
     "ciBuild": "always"
-  },
-  "type": "module"
+  }
 }
