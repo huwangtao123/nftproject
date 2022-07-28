@@ -1,11 +1,10 @@
 import React from 'react';
 import SelectMenu from './SelectMenu';
 import Image from 'next/image';
-import testimage from '../public/test.png';
+import testimage from '../public/QianqianVTO.png';
 import testimage2 from '../public/test2.png';
-import testimage3 from '../public/gmoy.png';
-import testimage4 from '../public/B07J2YCKTF.jpg';
-import testimage5 from '../public/gmoy_B07J2YCKTF.png';
+import testimage3 from '../public/gmoy_B07J2YCKTF.png';
+
 
 const style = {
   wrapper: `px-10 place-content-center`,
@@ -36,8 +35,8 @@ const Collections = () => {
               <button type='button' className={style.button}>Like</button>
             </div>
             <div className={style.info}>
-              <div>Cost: 0.01 ETH</div>
-              <div>Likes: 10</div>
+              <div>Cost: 0.001 ETH</div>
+              <div>Likes: 105</div>
             </div>
           </div>
           <div className={style.image}>
@@ -47,8 +46,8 @@ const Collections = () => {
               <button type='button' className={style.button}>Like</button>
             </div>
             <div className={style.info}>
-              <div>Cost: 0.01 ETH</div>
-              <div>Likes: 10</div>
+              <div>Cost: 0.001 ETH</div>
+              <div>Likes: 93</div>
             </div>
           </div>
           <div className={style.image}>
@@ -58,31 +57,9 @@ const Collections = () => {
               <button type='button' className={style.button}>Like</button>
             </div>
             <div className={style.info}>
-              <div>Cost: 0.01 ETH</div>
-              <div>Likes: 10</div>
+              <div>Cost: 0.001 ETH</div>
+              <div>Likes: 102</div>
             </div>
-          </div>
-          <div className={style.image}>
-            <Image alt='test image' src={testimage4} width={200} height={400} />
-            <div className={style.buttons}>
-              <button type='button' className={style.button}>Buy</button>
-              <button type='button' className={style.button}>Like</button>
-            </div>
-            <div className={style.info}>
-              <div>Cost: 0.01 ETH</div>
-              <div>Likes: 10</div>
-            </div>
-          </div>
-        </div>
-        <div className={style.image}>
-          <Image alt='test image' src={testimage5} width={200} height={400} />
-          <div className={style.buttons}>
-            <button type='button' className={style.button}>Buy</button>
-            <button type='button' className={style.button}>Like</button>
-          </div>
-          <div className={style.info}>
-            <div>Cost: 0.01 ETH</div>
-            <div>Likes: 10</div>
           </div>
         </div>
       </div>
