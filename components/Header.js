@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import amazonLogo from '../assets/amazonLogo.png';
+import amazonLogo from '../assets/fashioNFT.svg';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const style = {

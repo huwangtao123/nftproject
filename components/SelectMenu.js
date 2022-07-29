@@ -4,15 +4,19 @@ import { Listbox, Transition } from '@headlessui/react';
 import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
 import { customerImages } from '../assets/customerImages';
 
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function SelectMenu() {
-  const [selected, setSelected] = useState(customerImages[0]);
+export default function SelectMenu({ selectedPeople, handleSelectPeople }) {
+  //const [selected, setSelected] = useState(customerImages[0]);
 
   return (
-    <Listbox value={selected} onChange={setSelected}>
+    <Listbox
+      value={customerImages[{ selectedPeople }]}
+      onChange={handleSelectPeople}
+    >
       {({ open }) => (
         <>
           <Listbox.Label className='block text-sm font-medium text-gray-700'>
@@ -26,7 +30,9 @@ export default function SelectMenu() {
                 {/*  alt=''*/}
                 {/*  className='flex-shrink-0 h-6 w-6 rounded-full'*/}
                 {/*/>*/}
-                <span className='ml-3 block truncate'>{selected.name}</span>
+                <span className='ml-3 block truncate'>
+                  {selectedPeople.name}
+                </span>
               </span>
               <span className='ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none'>
                 <SelectorIcon
